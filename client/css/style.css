@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Swashbuckle;
+    src: url(../ttf/K26Swashbuckle.ttf);
+}
+
+#endofgame, div.button {
+	
+	font-size: 14pt;
+	font-family: Swashbuckle;
+	
+}
+
+body {
+
+	background-color: black; 
+	color: white;
+	font-family: helvetica, verdana;
+	text-align: justified;
+
+}
+
+#header img {
+
+	width: 100%; 
+
+}
+
+.right {
+
+	width: 50%;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+.left {
+
+	width: 45%;
+	margin-left: 50%;
+
+}
+
+#learnhowto {
+
+    text-align: justify;
+    text-justify: inter-word;
+    
+}

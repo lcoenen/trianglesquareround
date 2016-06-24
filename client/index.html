@@ -1,10 +1,101 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script type="text/javascript" src="js/index.js" />
+	
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.8.24/themes/dark-hive/jquery-ui.css">
+		<link rel="stylesheet" href="css/style.css">
+	
+		<script type="text/javascript" src="lib/kiwi.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		
+		<script src="https://code.jquery.com/ui/1.8.24/jquery-ui.min.js" 
+			integrity="sha256-UOoxwEUqhp5BSFFwqzyo2Qp4JLmYYPTHB8l+1yhZij8=" 
+			crossorigin="anonymous"></script>
+		
 		<title>Triangle - Round - Square</title>
+		
+		<script type="text/javascript" src="js/ui.js"></script>
+		
 	</head>
 	<body>
-		Hello world!
+		<div style="margin:auto; width: 70%;" id="header"><img src="img/baneer.png" alt="triangle vs. square vs. round" /></div>
+		<div style="margin:auto; width: 70%;"  id="home">
+
+			<p class="right">TvSvR is a simple, yet joyful strategy / action game one can play with only one hand and a keyboard. 
+			Destroy your friend by vicious moves or compete with (hopefully) hundred of people over the internet.
+			The goal is to be the last one standing - to achieve that, cleverly lead your geometric troops to victory!
+			</p>
+			<p class="left">
+				<div data-role="header" style="">
+					<h4>Hall of fame</h4>
+				</div><!-- /header -->
+				<div data-role="content">
+					<table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+						<thead>
+							<tr>
+								<th data-priority="1">Player</th>
+								<th data-priority="1">Victory</th>
+								<th data-priority="1">Defeat</th>
+							</tr>
+						</thead>
+						<tbody> 
+							<tr>
+								<th>JT</th>
+								<td>9</td>
+								<td>2</td>                    
+							</tr>
+							<tr>
+								<th>Maxux</th>
+								<td>8</td>
+								<td>1</td>                    
+							</tr>
+							<tr>
+								<th>ghilan</th>
+								<td>7</td>
+								<td>1</td>                    
+							</tr>
+						</tbody>
+				   </table>
+				</div>   
+			</p>
+			<p>
+				<div class="button learn_howto">Learn how to play</div>
+				<div class="button play_local">Fight locally!</div>
+				<div class="button play_net">Fight over the net!</div>
+			</p>
+		</div>
+		<div style="margin:auto" id="gamecanvas">
+		</div>
+		<div style="margin:auto; width: 70%;" id="endofgame">
+			
+			<p class="right">The <span id="winner_team"></span> team win the game! <br /> 
+				<div class="button again">Play again!</div>
+				<div class="button comeback">Back to the menu</div> </p>
+			<p class="left"><img src="" alt="the winner" id="winner_pic" /></p>
+		</div>
+		
+		<div style="margin:auto; width: 70%;" id="learn_howto">
+		
+		<p>Since the great Pencil War, the valorous Triangle people had been torn apart between the good and the bad side of the seet of paper. 
+		One is black like the night while the other is as bright as the sunshine. According to the Circle tribe's old wisdom, only one of them will be
+		brave enough to save Geoworld from desperation. On each side, only one brave warrior is ready to at least try. Followed by a bunch of powerful 
+		Squares and the slow and unstoppable Circles, these champions will fight to death for the sake of a brighter future. 
+		You <strong>have</strong> to help them during this dangerous quest!</p>
+		   
+		<p>TvSvR is an action/strategy game which require precision, velocity and a deep tactic sense. You'll play with your arrows: everytime you'll hit one, all your characters will follow your way. You'll quickly see the problem : there's nothing in common between a fast, lightweight killer like a triangle and a slow, heavy-armored circle. You'll have to think about your next move and be smart: loosing your triangle in the beginning of the game is the best way to end up surrounded by ennemies. You'll start the game with three rounds, two squares and one triangle. Each of them have strenghs and weaknesses - and it will be your holy duty to find and exploit them! To help you getting started, here is a few of my personal tips:</p>
+		
+		<ul>
+			<li>The triangle is very quick and handy to pierce Round's armor, but you only have one, so be cautious about him. </li>
+			<li>The Square is strong enough to erase a triangle, but his fighting style is very messy, especially with other square</li>
+			<li>Like in Chess, having a maximum of character out of your base is the best way to win some territory</li>
+		</ul>
+		
+		<p>Good luck!</p>
+		
+		<p><emph>Oh, and I'm Loïc C. &lt;<a href="mailto:ijwtcymb@gmail.com">ijwtcymb@gmail.com</a>, don't hesitate to contact me for any (good?) reason</emph></p> 
+		
+		<div class="button comeback">Revenir au menu</div>
+		
+		</div>
 	</body>
 </html>
