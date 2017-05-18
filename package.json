@@ -4,7 +4,8 @@
   "description": "Square Triangle Round game",
   "main": "server/coffee/index.coffee",
   "scripts": {
-    "test": "mocha server/coffee/test.coffee"
+    "test": "mocha server/coffee/test.coffee",
+				 "start": "coffee server/server.coffee"
   },
   "repository": {
     "type": "git",
