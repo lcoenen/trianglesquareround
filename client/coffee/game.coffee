@@ -49,9 +49,9 @@ class Game
 			@upKey = @game.input.keyboard.addKey Kiwi.Input.Keycodes.UP
 			@downKey = @game.input.keyboard.addKey Kiwi.Input.Keycodes.DOWN
 			
-			@altLeftKey = @game.input.keyboard.addKey Kiwi.Input.Keycodes.Q
+			@altLeftKey = @game.input.keyboard.addKey Kiwi.Input.Keycodes.A
 			@altRightKey = @game.input.keyboard.addKey Kiwi.Input.Keycodes.D
-			@altUpKey = @game.input.keyboard.addKey Kiwi.Input.Keycodes.Z
+			@altUpKey = @game.input.keyboard.addKey Kiwi.Input.Keycodes.W
 			@altDownKey = @game.input.keyboard.addKey Kiwi.Input.Keycodes.S
 
 		@ingame.update = ->

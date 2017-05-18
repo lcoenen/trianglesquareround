@@ -108,12 +108,12 @@ class Character
 	
 class PlayerCharacter extends Character
 	keys :
-		w:
+		b:
 			leftKey: 'leftKey'
 			rightKey: 'rightKey'
 			upKey: 'upKey'
 			downKey: 'downKey'
-		b:
+		w:
 			leftKey: 'altLeftKey'
 			rightKey: 'altRightKey'
 			upKey: 'altUpKey'

@@ -29,8 +29,8 @@ startlocalgame = =>
 	
 	header_resize false	
 	$('#gamecanvas').show 'pulsate', 500
-	$('#home').hide ()
-	$('#endofgame').hide ()
+	$('#home').hide()
+	$('#endofgame').hide()
 
 menu = =>
 	$('#endofgame').hide()
