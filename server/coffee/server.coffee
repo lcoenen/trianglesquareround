@@ -13,7 +13,7 @@ class Server
 		@app = express()
 		@app.use express.static 'client/'
 	start: ->
-		console.log 'Launch'
+		console.log 'Serving localhost:8080'
 		@app.listen(8080)
 		
 			
