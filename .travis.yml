@@ -1,1 +1,4 @@
 language: node_js
+notifications:
+  email:
+    - loic.coenen.lg@gmail.com
