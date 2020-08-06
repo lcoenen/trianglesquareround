@@ -3,6 +3,8 @@ express = require 'express'
 
 fs = require 'fs'
 
+port = process.env.PORT || 3000;
+
 #
 #	Main class of the server
 #	
@@ -13,10 +15,8 @@ class Server
 		@app = express()
 		@app.use express.static 'client/'
 	start: ->
-		console.log 'Serving localhost:8080'
-		@app.listen(8080)
-		
-			
+		console.log 'Serving localhost:', port 
+		@app.listen(port)
 
 server = new Server
 server.start()

@@ -9,7 +9,7 @@ module.exports = (grunt) ->
 		shell:
 			doc: 'codo client/coffee/*.coffee server/coffee/*.coffee'
 			clean:	'rm client/js/* || rm doc/* -fr || 1'
-			serve:	'coffee server/coffee/server.coffee'
+			serve:	'npx coffee server/coffee/server.coffee'
 	
 	grunt.loadNpmTasks 'grunt-contrib-coffeeify'
 	grunt.loadNpmTasks 'grunt-shell'
